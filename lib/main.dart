@@ -13,10 +13,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: CategoryDetails.routeName,
+      initialRoute: HomeScreen.routeName,
       routes: {
         HomeScreen.routeName : (context) => HomeScreen(),
-        CategoryDetails.routeName : (context) => CategoryDetails(),
+        // CategoryDetails.routeName : (context) => CategoryDetails(),
       },
       theme: MyTheme.lightTheme,
     );

@@ -5,12 +5,13 @@ import 'package:flutter_news_app/model/NewsResponse.dart';
 import 'package:flutter_news_app/model/sourceResponse.dart';
 import 'package:http/http.dart' as http;
 class ApiManger{
-  static Future<SourceResponse> getSources()async{
+  static Future<SourceResponse> getSources(String categoryId)async{
     /*
   https://newsapi.org/v2/top-headlines/sources?apiKey=eb0b2dcf95c1465bb4b55646450476d9
    */
     Uri url = Uri.https(ApiConstants.baseUrl,ApiConstants.sourceApi,{
-      'apiKey' : 'eb0b2dcf95c1465bb4b55646450476d9'
+      'apiKey' : 'eb0b2dcf95c1465bb4b55646450476d9' ,
+      'category' : categoryId
     });
     try{
       var response = await http.get(url);
