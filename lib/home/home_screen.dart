@@ -4,6 +4,7 @@ import 'package:flutter_news_app/category/category_fragment.dart';
 import 'package:flutter_news_app/home/home_drawer.dart';
 import 'package:flutter_news_app/model/categoryDM.dart';
 import 'package:flutter_news_app/my_theme.dart';
+import 'package:flutter_news_app/search/seach.dart';
 import 'package:flutter_news_app/settings/settings_tab.dart';
 
 class HomeScreen extends StatefulWidget {
