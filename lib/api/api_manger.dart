@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:flutter_news_app/api/api_constants.dart';
 import 'package:flutter_news_app/model/NewsResponse.dart';
 import 'package:flutter_news_app/model/sourceResponse.dart';
